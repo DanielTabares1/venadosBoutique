@@ -81,8 +81,13 @@ public class  RegistrarTrabajadorController {
             mostrarMensaje(Alert.AlertType.ERROR, "Registro de Trabajador", "Resultado de la transacción", e.getMessage());
         }
 
-        limpiarCampos();
-
+        try{
+            this.trabajadorBsn.registrarTrabajador(trabajador);
+            mostrarMensaje(Alert.AlertType.INFORMATION, "Registro de Trabajador", "Resultado de la transacción", "El trabajador ha sido registrado con éxito");
+            limpiarCampos();
+        }catch (TrabajadorYaExisteException e){
+            mostrarMensaje(Alert.AlertType.ERROR, "Registro de Trabajador", "Resultado de la transacción", e.getMessage());
+        }
     }
 
     private void limpiarCampos() {
