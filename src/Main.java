@@ -16,7 +16,6 @@ public class Main extends Application {
         primaryStage.show();
         Image ico = new Image("resources/37901.jpg");
         primaryStage.getIcons().add(ico);
-
     }
 
 
