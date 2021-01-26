@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="contenedorPrincipal" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgba(225,255,255,0);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ContenedorPrincipalController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="INFORMACION">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#btnCreditos_action" text="Creditos" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="REGISTRAR">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#btnRegistrarProveedor_action" text="Registrar Proveedor" />
+                  <MenuItem mnemonicParsing="false" onAction="#btnRegistrarCliente_action" text="Registrar Cliente" />
+                      <MenuItem mnemonicParsing="false" onAction="#btnRegistrarTrabajador_action" text="Registrar Trabajador" />
+                           <MenuItem mnemonicParsing="false" onAction="#btnRegistrarTela_action" text="Registrar Tela" />
+                                <MenuItem mnemonicParsing="false" onAction="#btnRegistrarProducto_action" text="Registrar Producto" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="VENTAS">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#btnRegistrarVenta_action" text="Registrar" />
+                  <MenuItem mnemonicParsing="false" onAction="#btnRevisarEstado_action" text="Estado" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="CATALOGO">
+            <items>
+              <MenuItem mnemonicParsing="false" text="..." />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_LEFT">
+         <image>
+            <Image url="@../resources/preview.jpg" />
+         </image></ImageView>
+   </bottom>
+</BorderPane>
