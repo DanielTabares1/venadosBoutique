@@ -57,7 +57,7 @@ public class  RegistrarTrabajadorController {
             return;
         }
         try{
-            Integer.parseInt(idIngresado);
+            Integer.parseInt(celularIngresado);
         }catch(NumberFormatException e){
             mostrarMensaje(Alert.AlertType.ERROR, "Registro de Trabajador", "Resultado de la transacción", "El celular debe ser un valor numérico");
             txtCelular.requestFocus();
@@ -72,14 +72,6 @@ public class  RegistrarTrabajadorController {
         }
 
         Trabajador trabajador= new Trabajador(idIngresado,nombreIngresado,ciudadIngresado,celularIngresado);
-
-        try{
-            this.trabajadorBsn.registrarTrabajador(trabajador);
-            mostrarMensaje(Alert.AlertType.INFORMATION, "Registro de Trabajador", "Resultado de la transacción", "El trabajador ha sido registrado con éxito");
-            limpiarCampos();
-        }catch (TrabajadorYaExisteException e){
-            mostrarMensaje(Alert.AlertType.ERROR, "Registro de Trabajador", "Resultado de la transacción", e.getMessage());
-        }
 
         try{
             this.trabajadorBsn.registrarTrabajador(trabajador);
