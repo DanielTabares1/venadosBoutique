@@ -36,11 +36,11 @@
                   <Label text="Material" GridPane.rowIndex="2" />
                   <Label text="Cantidad" GridPane.rowIndex="3" />
                   <Label text="Precio por metro" GridPane.rowIndex="4" />
-                  <TextField fx:id="txtId" GridPane.columnIndex="1" />
-                  <TextField fx:id="txtNombre" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <TextField fx:id="txtEmpresa" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <TextField fx:id="txtCelular" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <TextField fx:id="txtCiudad" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="txtNombre" GridPane.columnIndex="1" />
+                  <TextField fx:id="txtColor" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtMaterial" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtCantidad" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="txtPrecio" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                </children>
                <VBox.margin>
                   <Insets left="10.0" right="10.0" />

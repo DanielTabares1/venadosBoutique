@@ -5,6 +5,7 @@ import model.Cliente;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class ClienteDAOList implements ClienteDAO {
 
@@ -14,4 +15,10 @@ public class ClienteDAOList implements ClienteDAO {
     public void registrarCliente(Cliente cliente){
         clientesDB.add(cliente);
     }
+
+    @Override
+    public Optional<Cliente> consultarPorId(String id) {
+        return Optional.empty();
+    }
+
 }

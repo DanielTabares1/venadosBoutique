@@ -1,13 +1,17 @@
 package model;
 
 public abstract class Persona {
+    //variables de la clase
     protected String nombre;
-
     protected String id;
 
-    public String getNombre() { return nombre; }
+    //getters y setters
+    public String getNombre() {
+        return nombre;
+    }
 
     public void setNombre(String nombre) {
+
         this.nombre = nombre;
     }
 

@@ -3,17 +3,18 @@ package model;
 public class Trabajador extends Persona {
 
     private String direccion;
-
     private String celular;
-
-    //
+    private String usuario;
+    private String contraseña;
     private static int contadorTrabajadores;
 
     public Trabajador(String id, String nombre, String direccion, String celular) {
         this.id = id;
         this.nombre = nombre;
-        this.celular=celular;
-        this.direccion=direccion;
+        this.celular = celular;
+        this.direccion = direccion;
+        this.usuario = nombre;
+        this.contraseña = id;
         contadorTrabajadores++;
     }
 
@@ -22,7 +23,7 @@ public class Trabajador extends Persona {
     }
 
     public void setDireccion(String direccion) {
-        direccion = direccion;
+        this.direccion = direccion;
     }
 
     public String getCelular() {
@@ -32,8 +33,6 @@ public class Trabajador extends Persona {
     public void setCelular(String celular) {
         this.celular = celular;
     }
-
-    //
 
     public static int getContadorTrabajadores() {
         return contadorTrabajadores;
