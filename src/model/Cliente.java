@@ -2,45 +2,32 @@ package model;
 
 public class Cliente extends Persona {
 
-    private String direccion;
-
-    private String celular;
-
-    private String ciudad;
-
+    //variables de la clase
+    private String telefono;
     private String correo;
 
-    public Cliente(String id, String nombre, String direccion, String celular, String ciudad, String correo) {
+    //método constructor
+    public Cliente(String id, String nombre, String telefono, String correo) {
         this.id = id;
         this.nombre = nombre;
-        this.celular=celular;
-        this.direccion=direccion;
-        this.correo=correo;
-        this.ciudad=ciudad;
-
+        this.telefono = telefono;
+        this.correo = correo;
     }
 
-    public String getDireccion() {
-        return direccion;
+    //getters y setters
+    public String getTelefono() {
+        return telefono;
     }
 
-    public void setDireccion(String direccion) {
-        direccion = direccion;
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
-    public String getCelular() {
-        return celular;
+    public String getCorreo() {
+        return correo;
     }
 
-    public void setCelular(String celular) {
-        this.celular = celular;
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
-
-    public String getCiudad() {        return ciudad;    }
-
-    public void setCiudad(String ciudad) {        this.ciudad = ciudad;    }
-
-    public String getCorreo() {        return correo;    }
-
-    public void setCorreo(String correo) {        this.correo = correo;    }
 }
