@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShoppingCar.VistaController">
+  <children>
+    <SplitPane dividerPositions="0.6616541353383458" focusTraversable="true" prefHeight="500.0" prefWidth="800.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="499.0" prefWidth="361.9998779296875">
+          <children>
+            <TableView fx:id="tablaCompra" prefHeight="498.0" prefWidth="526.0">
+              <columns>
+                <TableColumn fx:id="nombreProductoCL" prefWidth="130.0" text="NombreProducto" />
+                <TableColumn fx:id="cantidadCL" prefWidth="103.0" text="Cantidad" />
+                <TableColumn fx:id="costoUnitarioCL" prefWidth="127.0" text="Costo unitario" />
+                <TableColumn fx:id="costoTotalCL" prefWidth="170.0" text="Costo total" />
+              </columns>
+            </TableView>
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="498.0" prefWidth="414.0">
+          <children>
+            <Label layoutX="14.0" layoutY="21.0" text="NombreProducto:">
+              <font>
+                <Font name="System Bold Italic" size="15.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Label font="$x1" layoutX="14.0" layoutY="231.0" text="Costo Total:" />
+            <Label font="$x1" layoutX="14.0" layoutY="158.0" text="Costo unitario:" />
+            <Label font="$x1" layoutX="14.0" layoutY="90.0" text="Cantidad:" />
+            <TextField fx:id="nombreProductoTF" layoutX="14.0" layoutY="45.0" prefHeight="26.0" prefWidth="239.0" />
+            <TextField fx:id="cantidadTF" layoutX="13.0" layoutY="114.0" prefHeight="26.0" prefWidth="239.0" />
+            <TextField fx:id="costoUnitarioTF" layoutX="14.0" layoutY="181.0" prefHeight="26.0" prefWidth="239.0" />
+            <TextField fx:id="costoTotalTF" layoutX="14.0" layoutY="260.0" prefHeight="26.0" prefWidth="239.0" />
+            <Button fx:id="aniadirBT" font="$x1" layoutX="18.0" layoutY="316.0" mnemonicParsing="false" onAction="#aniadir" prefHeight="26.0" prefWidth="234.0" text="Añadir" />
+            <Button fx:id="modificarBT" font="$x1" layoutX="19.0" layoutY="359.0" mnemonicParsing="false" onAction="#modificar" prefHeight="26.0" prefWidth="234.0" text="Modificar" />
+            <Button fx:id="eliminarBT" font="$x1" layoutX="19.0" layoutY="402.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="26.0" prefWidth="234.0" text="Eliminar" />
+            <Button fx:id="nuevoBT" font="$x1" layoutX="19.0" layoutY="439.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="45.0" prefWidth="234.0" text="NUEVO !!!" />
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>
