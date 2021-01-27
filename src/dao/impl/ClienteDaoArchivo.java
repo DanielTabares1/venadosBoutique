@@ -19,7 +19,6 @@ public class ClienteDaoArchivo implements ClienteDAO {
             writer.write(registro+"\n");
             writer.close();
         } catch (IOException e){
-            System.out.println("chale");
             return;
         }
     }

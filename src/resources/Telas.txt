@@ -1,0 +1,2 @@
+telaDePoncho,rojo,nylon,20,3
+tela de costal,verde,fibra,30,2
